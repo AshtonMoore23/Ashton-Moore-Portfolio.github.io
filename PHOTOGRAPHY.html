@@ -27,7 +27,7 @@
 		 >
   <button class="dropbtn" style="width:111%">WORK</button>
   <div class="dropdown-content -content"  >
-    <a href="VIDEO.html" class="text-white text-decoration-none" style="width: 104%; margin-top: -3.9%">video</a>
+    <a href="video1.html" class="text-white text-decoration-none" style="width: 104%; margin-top: -3.9%">video</a>
     <a href="PHOTOGRAPHY.html" class="text-white text-decoration-none" style="width: 104%">photography</a>
     <a href="DESIGN.html" class="text-white text-decoration-none" style="width: 104%">design</a>
   </div>
@@ -40,7 +40,38 @@
 	  <div class="fix" style="height: 173px"></div>
 <video  id="vid 3" width="100%" hight="auto" autoplay loop muted>	
 	<source src="images/photography 2.mp4"/>
-</video>	
+</video>
+		
+	
+	<audio id="testAudio" hidden src="images/ASHUTOSH - Time.webm" type="audio/mpeg">
+</audio>
+
+<button id="playAudio" style="position: absolute; margin-left: -53.5%; margin-top: 13%; width: 5%; height: 10%; border-radius: 50%;color: black">▷</button>
+		
+		
+		<script>
+	document.getElementById("playAudio").addEventListener("click", function(){
+	var audio = document.getElementById('testAudio');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "▷"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "| | ";
+    audio.play();
+  }
+
+});
+	
+	</script>
+	
+		
+		
+		
+		
+		
+	
 </div>
 </center>  	
 <!--1st container-->

@@ -43,6 +43,36 @@
 </center>  	
 <!--1st container-->
 
+	
+	<audio id="testAudio" hidden src="images/LiQWYD - The Way.webm" type="audio/mpeg">
+</audio>
+
+<button id="playAudio" style="position: absolute; margin-left: 48%; margin-top: -4%; width: 5%; height: 10%; border-radius: 50%;color: black">▷</button>
+		
+		
+		<script>
+	document.getElementById("playAudio").addEventListener("click", function(){
+	var audio = document.getElementById('testAudio');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "▷"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "| | ";
+    audio.play();
+  }
+
+});
+	
+	</script>
+	
+	
+	
+	
+	
+	
+	
 	<div>
 	<h1 class="harrystitle">&nbsp;HARRY'S</h1>
 		
