@@ -1,2 +1,0 @@
-# Ashton Moore Portfolio
- 

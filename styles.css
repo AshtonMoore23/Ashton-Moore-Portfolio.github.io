@@ -132,7 +132,7 @@ text-align: center
 
 
 /*change hight and width of the about me vid*/
-#vid{width:50% ;height:200;overflow: hidden;
+#vid{width:50% ;height:20%;overflow: hidden;
 margin-top:100px;
 margin-bottom: 0px;
 
@@ -142,15 +142,15 @@ margin-bottom: 0px;
 }
 
 .rightphoto {
-	width: 594px;
-	height: 684px;
+	width: 40%;
+	height: auto;
 	float: right;
 
 	margin: 5px;
-	margin-top: 18px;
-	margin-left: 0px;
-	margin-right: 130px;
-	margin-bottom: 90px;
+	margin-top: 5%;
+	margin-left: 0%;
+	margin-right:5%;
+	margin-bottom: 10%;
 	border:thick solid #FFFFFF;
 	
 	
@@ -166,6 +166,7 @@ margin-bottom: 0px;
 }
 .hello{
 	width: 50%;
+	max-width: 50%;
 	float:left;
 font-size: 70px;
 	overflow: hidden;
@@ -180,6 +181,7 @@ font-size: 70px;
 }
 .hello1{
 	width: 50%;
+	max-width: 50%;
 	float:left;
 font-size: 70px;
 	overflow: hidden;
@@ -192,10 +194,12 @@ font-size: 70px;
 }
 
 .hello2{width: 50%;
+	max-width: 50%;
 	float:left;
 font-size: 30px;
 	overflow: hidden;
 	text-align: right;
+	
 	color: white;
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	
@@ -230,7 +234,7 @@ font-size: 30px;
 	width: 40%;
 	height: auto;
 	float: left;
-	margin-top: 4%;
+	margin-top: 10%;
 	
 	
 	
@@ -291,10 +295,10 @@ margin-left:0.2%}
 
 
 /*buttons*/
-.buttoncontainer{width: 100%;height: auto}
+.buttoncontainer{width: 120%;height: auto; margin-left: 20%}
 
 .btn-group button {
-	width: 100%;
+	width: 53%;
   background-color: black; 
   border: 6px  solid #FFFFFf;
 	
@@ -305,24 +309,24 @@ margin-left:0.2%}
 	
 	
 }
-.btn-group a{font-size: 80px;
+.btn-group a{max-width: 100%; font-size: 300%;
 	color: white; 
 	width: 100%
 
 }
-.btn1{margin-right: 5%;margin-left: 5%}
+.btn1{margin-right: 5%;margin-left: 0%}
 .btn2{margin-right: 5%}
 
 
 /* Add a background color on hover */
 .btn-group button:hover {
   background-color: #FFFFFF;
-color:black; border-radius: 30px;
+color:black; border-radius: 10%;
 }
 .btn-group a:hover{color: black;
 text-decoration: none }
 
-.btn-group
+
 /*photography pg*/
 
 
@@ -330,7 +334,7 @@ text-decoration: none }
 
 #vid2{width:50% ;height:200;overflow: hidden;
 margin-top:100px;
-	margin-bottom: 0px;}
+	margin-bottom: 0%;}
 
 
 .hear {
@@ -486,7 +490,7 @@ margin-top: 25%}
 	width: 50%;
 	padding:4% ;
 	padding-right: 10%;
-	margin-top: 22%;
+	margin-top: 20%;
 	font-size: 25px;
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	}
@@ -757,7 +761,7 @@ margin-top: 0.3%}
 /*video page*/
 
 
-.harrystitle{color: white;text-align:inherit; font-size: 50px; padding: 20px; border-left: solid #FFFFFF ; margin-left: 3%;  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";}
+.harrystitle{color: white;text-align:inherit; font-size: 50px; padding: 20px; border-left: solid #FFFFFF ; margin-left: 3%; margin-top: 6%;  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";}
 
 .harrysp{width:100%;height: auto; color: white; text-align: center}
 
