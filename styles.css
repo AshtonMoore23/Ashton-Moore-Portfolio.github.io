@@ -1,18 +1,13 @@
 /* General layout for larger screens */
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0;
 }
 
 .main-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  margin: 20px;
 }
 
 .textbox {
@@ -22,33 +17,9 @@ body {
 
 .textbox p {
   font-size: 2rem;
-  margin: 0;
-  padding: 5px;
 }
 
-.textbox2 {
-  max-width: 600px;
-  margin-left: 20px;
-  flex-basis: 40%;
-}
-
-.textbox2 p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-.resume-button {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* Style for images */
-.rightphoto {
+.divpic img {
   max-width: 100%;
   height: auto;
 }
@@ -66,15 +37,7 @@ body {
 }
 
 .video {
-  max-width: 100%;
-  height: auto;
-  width: 90%;
-}
-
-/* Make images responsive */
-.rightphoto, .leftpic, .divpic img {
   width: 100%;
-  max-width: 500px;
   height: auto;
 }
 
@@ -85,7 +48,7 @@ body {
     align-items: center;
   }
 
-  .textbox, .textbox2 {
+  .textbox, .divpic {
     width: 100%;
     padding: 10px;
   }
@@ -97,10 +60,6 @@ body {
   .rightphoto {
     width: 90%;
     max-width: none;
-  }
-
-  .textbox2 p {
-    font-size: 1.1rem;
   }
 }
 
