@@ -5,15 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashton Moore Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img src="images/bg 4 WITH TEXT.webp" alt="Header Image" class="header-image">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Ashton Moore</h1>
+            <p class="hero-subtitle">Creative Developer | Visionary Designer</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+        <img src="images/bg-hero.jpg" alt="Hero Image" class="hero-image">
     </header>
-    <div class="container">
-        <main>
-            <section class="about">
-                <h2>About Me</h2>
-                <p>I'm Ashton, and I create amazing things!</p>
-                <p>This is an extended section to make the page scrollable. You can add more details about your work, projects, and skills here. This text is just a placeholder to create enough space to demonstrate the fade-out effect on the header image.</p>
-                <p>Here’s some additional placeholder co
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I'm Ashton Moore, a passionate creator who transforms ideas into reality. Whether through innovative design, engaging storytelling, or interactive projects, my goal is to inspire and captivate audiences.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>My Work</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="overlay">Project 1</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="overlay">Project 2</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/project3.jpg" alt="Project 3">
+                <div class="overlay">Project 3</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+        <a href="mailto:ashton@example.com" class="cta-button">Contact Me</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ashton Moore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
