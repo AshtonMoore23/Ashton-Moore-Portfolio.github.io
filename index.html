@@ -12,6 +12,9 @@
         <div class="nav-left">
             <button class="nav-button" onclick="scrollToSection('header')">Home</button>
         </div>
+        <div class="nav-center">
+            <h1 class="logo">ASHTON MOORE</h1>
+        </div>
         <div class="nav-right">
             <button class="nav-button" onclick="scrollToSection('about')">About</button>
             <button class="nav-button" onclick="scrollToSection('portfolio')">Work</button>
@@ -19,73 +22,47 @@
         </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header id="header">
         <img src="images/bg 4 WITH TEXT.webp" alt="Header Image" class="header-image">
     </header>
 
     <!-- Main Content -->
     <div class="container">
-        <main>
-            <!-- About Section -->
-            <section id="about" class="about">
-                <h2>About Me</h2>
-                <p>I'm Ashton, and I create amazing things!</p>
-            </section>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I'm Ashton, and I create amazing things! Here's a bit more about me...</p>
+        </section>
 
-            <!-- Portfolio Section -->
-            <section class="portfolio" id="portfolio">
-                <h2>My Work</h2>
-                <div class="gallery">
-                    <div class="gallery-item" onclick="openLightbox(0)">
-                        <img src="images/project1.jpg" alt="Project 1">
-                    </div>
-                    <div class="gallery-item" onclick="openLightbox(1)">
-                        <img src="images/project2.jpg" alt="Project 2">
-                    </div>
-                    <div class="gallery-item" onclick="openLightbox(2)">
-                        <img src="images/project3.jpg" alt="Project 3">
-                    </div>
-                </div>
-            </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h2>My Work</h2>
+            <div class="gallery">
+                <img src="images/work1.jpg" alt="Project 1">
+                <img src="images/work2.jpg" alt="Project 2">
+                <img src="images/work3.jpg" alt="Project 3">
+            </div>
+        </section>
 
-            <!-- Contact Section -->
-            <section id="contact" class="contact">
-                <h2>Contact Me</h2>
-                <p>Email: ashton@example.com</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Ashton. All rights reserved.</p>
-        </footer>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out if you'd like to work together!</p>
+        </section>
     </div>
 
-    <!-- JavaScript -->
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ashton. All rights reserved.</p>
+    </footer>
+
     <script>
-        // Smooth scroll functionality for buttons
         function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Lightbox functionality
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImg = document.getElementById("lightbox-img");
-        const lightboxCaption = document.getElementById("lightbox-caption");
-
-        const images = [
-            { src: "images/project1.jpg", caption: "Project 1: Amazing Design" },
-            { src: "images/project2.jpg", caption: "Creative Vision" },
-            { src: "images/project3.jpg", caption: "Bold Ideas" }
-        ];
-
-        function openLightbox(index) {
-            lightbox.style.display = "flex";
-            lightboxImg.src = images[index].src;
-            lightboxCaption.textContent = images[index].caption;
-        }
-
-        function closeLightbox() {
-            lightbox.style.display = "none";
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
         }
     </script>
 </body>
