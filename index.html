@@ -48,5 +48,26 @@
     <p>&copy; 2024 Ashton. All rights reserved.</p>
 </footer>
 
+<!-- JavaScript for Dropdown -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const workButton = document.querySelector('.work');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        // Show dropdown on click
+        workButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            dropdownContent.classList.toggle('show');
+        });
+
+        // Optional: Close dropdown when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!workButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.classList.remove('show');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
