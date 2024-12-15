@@ -1,25 +1,4 @@
-/* General body and page styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-}
-
-header {
-    width: 100%;
-    position: relative;
-}
-
-.header-image {
-    width: 100%;
-    height: 25vh;
-    object-fit: cover;
-    position: relative;
-}
-
-/* Navbar styles */
+/* General Nav Styles */
 nav {
     width: 100%;
     position: fixed;
@@ -51,7 +30,7 @@ nav {
     background-color: #555;
 }
 
-/* Dropdown styles */
+/* Dropdown Styles */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -90,9 +69,33 @@ nav {
     background-color: #555;
 }
 
+/* Header and Image */
+header {
+    width: 100%;
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: 20vh; /* Change this value to make the image smaller (e.g., from 25vh to 20vh) */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* General body and page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
 /* Content styles */
 .container {
-    margin-top: 120px; /* Added margin to prevent content from being hidden behind the nav */
+    margin-top: 80px; /* Space for the fixed navbar */
     padding: 20px;
 }
 
