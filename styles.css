@@ -1,85 +1,44 @@
-/* General layout for larger screens */
+/* General styles */
 body {
-  font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.main-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.textbox {
-  max-width: 500px;
-  margin-right: 20px;
+header {
+    text-align: center;
+    padding: 50px;
 }
 
-.textbox p {
-  font-size: 2rem;
+header h1 {
+    font-size: 2.5rem;
 }
 
-.divpic img {
-  max-width: 100%;
-  height: auto;
+.about {
+    padding: 30px;
+    text-align: center;
 }
 
-/* Example Work section */
-.example-work {
-  text-align: center;
-  margin-top: 50px;
+.about h2 {
+    font-size: 2rem;
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.video {
-  width: 100%;
-  height: auto;
-}
-
-/* For small devices like mobile and tablets */
-@media (max-width: 768px) {
-  .main-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .textbox, .divpic {
+footer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
     width: 100%;
-    padding: 10px;
-  }
-
-  .hello, .hello1, .hello2 {
-    font-size: 1.2rem;
-  }
-
-  .rightphoto {
-    width: 90%;
-    max-width: none;
-  }
+    bottom: 0;
 }
 
-/* For even smaller screens like phones in portrait mode */
-@media (max-width: 480px) {
-  .homebutton a {
+footer p {
     font-size: 1rem;
-  }
-
-  .about, .contact, .dropbtn {
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  .textbox p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .footer {
-    font-size: 0.8rem;
-  }
 }
