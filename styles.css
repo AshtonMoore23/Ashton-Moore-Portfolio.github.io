@@ -1,23 +1,74 @@
 /* General layout for larger screens */
 body {
   font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 20px;
+  margin: 20px;
 }
 
-button {
-  margin: 10px;
+.textbox {
+  max-width: 500px;
+  margin-right: 20px;
 }
 
-img.backgroundimage {
-  width: 100%;
+.textbox p {
+  font-size: 2rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.textbox2 {
+  max-width: 600px;
+  margin-left: 20px;
+  flex-basis: 40%;
+}
+
+.textbox2 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Style for images */
+.rightphoto {
+  max-width: 100%;
   height: auto;
+}
+
+/* Example Work section */
+.example-work {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  max-width: 100%;
+  height: auto;
+  width: 90%;
 }
 
 /* Make images responsive */
@@ -29,32 +80,27 @@ img.backgroundimage {
 
 /* For small devices like mobile and tablets */
 @media (max-width: 768px) {
-  /* Adjust the main container layout for smaller screens */
   .main-container {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Stack the text and images on smaller screens */
-  .textbox, .divpic, .containervid {
+  .textbox, .textbox2 {
     width: 100%;
     padding: 10px;
   }
 
-  /* Adjust the nav buttons to be more mobile-friendly */
-  .about, .contact, .dropbtn {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Adjust text size for mobile */
   .hello, .hello1, .hello2 {
     font-size: 1.2rem;
   }
 
-  .rightphoto, .leftpic {
+  .rightphoto {
     width: 90%;
     max-width: none;
+  }
+
+  .textbox2 p {
+    font-size: 1.1rem;
   }
 }
 
