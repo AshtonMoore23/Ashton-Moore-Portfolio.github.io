@@ -1,0 +1,22 @@
+<script>
+    // Lightbox functionality
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxCaption = document.getElementById("lightbox-caption");
+
+    const images = [
+        { src: "images/project1.jpg", caption: "Project 1: Amazing Design" },
+        { src: "images/project2.jpg", caption: "Project 2: Creative Vision" },
+        { src: "images/project3.jpg", caption: "Project 3: Bold Ideas" }
+    ];
+
+    function openLightbox(index) {
+        lightbox.style.display = "flex";
+        lightboxImg.src = images[index].src;
+        lightboxCaption.textContent = images[index].caption;
+    }
+
+    function closeLightbox() {
+        lightbox.style.display = "none";
+    }
+</script>
