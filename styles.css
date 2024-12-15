@@ -20,7 +20,7 @@ header {
 
 .header-image {
     width: 100%;
-    height: 25vh; /* Make the header image take up 1/4th of the page height */
+    height: 20vh; /* Make the header image take up 1/4th of the page height */
     object-fit: cover;
     position: absolute;
     top: 0;
