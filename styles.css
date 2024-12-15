@@ -1,110 +1,156 @@
 /* General Reset */
-body, h1, h2, p, button {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Black background and white text */
+/* Body and Background */
 body {
-    background-color: black;
-    color: white;
     font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
 }
 
-/* Navigation Bar */
-.home-bar {
-    position: fixed;
+/* Header and Image */
+header {
+    width: 100%;
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: 25vh; /* Make the header image take up 1/4th of the page height */
+    object-fit: cover;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+}
+
+.home-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: transparent; /* Transparent background */
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+    padding: 20px;
+    z-index: 10;
 }
 
-/* When scrolled, navbar changes background */
-body.scrolled .home-bar {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.nav-left, .nav-right {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-center {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.nav-button {
-    background: none;
-    border: 2px solid white;
+.home-bar .nav-button {
+    background-color: transparent;
     color: white;
+    border: 2px solid white;
     padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-button:hover {
+.home-bar .nav-button:hover {
     background-color: white;
-    color: black;
+    color: #000;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: white;
+.home-bar .nav-button a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Header Image */
-.header-image {
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-title {
+    text-align: center; /* Center the title */
+    text-transform: uppercase; /* Make it all caps */
+    font-family: 'Kiona', sans-serif, Arial, Helvetica, sans-serif; /* Fallback fonts if Kiona is not available */
+    font-size: 3rem; /* Large font size */
+    letter-spacing: 5px; /* Add space between letters for emphasis */
+    position: relative;
+    display: inline-block;
+}
+
+/* Optional: Adding double line effect */
+.about-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Position it just below the text */
+    left: 0;
     width: 100%;
-    height: 100vh; /* Make the image fill the screen */
-    object-fit: cover;
-    object-position: center;
-    margin-top: 80px; /* Space for nav bar */
+    height: 3px; /* Thickness of the double line */
+    background-color: #fff; /* Line color */
+    transform: scaleX(0); /* Start with no width */
+    transform-origin: bottom right; /* Animation origin */
+    transition: transform 0.5s ease-out; /* Smooth line appearance */
 }
 
-/* Sections */
+/* Trigger the line animation when hovering */
+.about-title:hover::after {
+    transform: scaleX(1); /* Expand the line on hover */
+    transform-origin: bottom left;
+}
+
+/* About Section */
+.about p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Main Container for Flexbox */
 .container {
-    padding: 20px;
-}
-
-.about, .portfolio, .contact {
-    margin: 50px 0;
-}
-
-/* Gallery */
-.gallery {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    width: calc(33.333% - 10px);
-    height: auto;
-    border: 2px solid white;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Footer */
 footer {
     text-align: center;
     margin-top: 50px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
     font-size: 0.9rem;
 }
 
-/* Scroll effect on navbar */
-body.scrolled {
-    padding-top: 80px; /* Adjust for navbar height */
+/* Smooth Scrolling for Fade-Out Effect */
+main {
+    overflow: hidden;
+}
+
+/* Smooth Fade-Out for Image */
+header {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Fade the image as you scroll */
+body.scrolled header {
+    opacity: 0;
+}
+
+/* About Section */
+section.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Media Query Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .home-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
 }
